@@ -1,0 +1,19 @@
+body {
+    background-color:rgb(136, 0, 29);
+}
+
+header {
+
+    background-color:rgb(236, 63, 98);
+
+}
+/* Made the font larger and bolder so that the user can easily read the words and numbers*/
+main {
+    font-size: larger;
+    font-weight: bold;
+    color:aliceblue;
+}
+
+footer {
+    color:aliceblue;
+}
