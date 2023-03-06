@@ -1,0 +1,30 @@
+* {
+    margin: 0 auto;
+}
+
+
+body {
+    background-color:deepskyblue;
+}
+
+header {
+    background-color:springgreen;
+    color:blueviolet;
+    font-size: larger;
+}
+
+/*made font size of the paragraph xx-large so it will be easier to read
+and added a border to surround the main content.*/
+p {
+    font-size:xx-large;
+    color:rgb(111, 4, 211);
+    background-color:hotpink;
+    border-style: dotted;
+    border-color:crimson;
+    width: 50%;
+    padding: 5%;
+}
+
+footer {
+    color:yellow;
+}
