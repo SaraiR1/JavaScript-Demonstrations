@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <style>
+        body {
+            background-image: url(assets/space.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dedicated Web Developer</h1>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="mypage.html">Fun Page</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--Gets local storage for clients first name and number of visits-->
+        <h1 class="h1Index">
+            <script>storage()</script>
+        </h1>
+        <button type="button" onclick="remove()">Remove Local Storage</button>
+    </main>
+    <footer>
+        &copy; 2023 Sarai Rueda
+    </footer>
+</body>
+</html>

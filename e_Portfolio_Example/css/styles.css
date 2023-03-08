@@ -1,0 +1,119 @@
+/*I want to make all my web pages in the center*/
+
+* {
+    margin: 0 auto;
+}
+
+
+body {
+    background-color:rgb(109, 50, 204);
+    color:azure;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*I only wanted certain headers to be pink because they have no background image*/
+.title {
+    background-color:rgb(209, 89, 173);
+}
+
+/*styled the navigation links*/
+nav li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+a:link {
+    color:rgb(123, 203, 230);
+}
+
+a:visited {
+    color:palevioletred;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    margin-right: 25px;
+}
+
+/*styled different headings*/
+.h1Index {
+    width:45%;
+    padding: 5%;
+}
+
+main h2 {
+    color:rgb(255, 78, 173);
+}
+
+main h3 {
+    color:lightskyblue;
+}
+
+.h3About {
+    color:lightgreen;
+}
+
+.pAbout {
+    border-color:lightgreen;
+    background-color: lightgreen;
+    color:black;
+}
+
+ol {
+    border-style: dotted;
+    border-color: rgb(255, 78, 173);
+    background-color: rgb(255, 78, 173);
+    color:black;
+    width: 30%;
+    padding: 3%;
+}
+
+.pic {
+    padding: 2%;
+}
+
+/*styled form*/
+form {
+    width: 50%;
+}
+
+fieldset {
+    background-color:rgb(238, 144, 196);
+    margin: 15px;
+    padding: 20px;
+}
+
+legend {
+    background-color: rgb(255, 90, 167);
+    font-size: larger;
+    color:rgb(89, 0, 172);
+}
+
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+    width: 20%;
+    color:blueviolet;
+}
+
+#btn {
+    width:100px;
+    background-color: rgb(255, 149, 202);
+    font-size: large;
+    color:crimson;
+}
+
+#bar {
+    margin-left: 50%;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}

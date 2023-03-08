@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/cupertino/jquery-ui.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#date").datepicker();
+    });
+    </script>
+    <style>
+        div {
+            padding-top: 3%;
+        }
+   </style>
+</head>
+<body>
+    <header class="title">
+        <h1>Contact Me!</h1>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li>Contact Me</li>
+            <li><a href="mypage.html">Fun Page</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img src="assets/quote.jpg" height="250" alt="quote">
+    </div>
+    <main>
+        <!--No HTML validation. I used JavaScript for Validation-->
+        <form name="contact" method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl" novalidate>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="firstName">First Name:</label> <input type="text" name="firstName" id="firstName" autofocus><br>
+                <label for="lastName">Last Name:</label> <input type="text" name="lastName" id="lastName"><br>
+                <label for="email">Email Address:</label> <input type="email" name="email" id="email"><br>
+                <label for="date">Date:</label> <input type="text" name="date" id="date" placeholder="mm/dd/yyyy"><br>
+                <label for="password">Password:</label> <input type="password" onKeyUp="strengthMeter()" name="password" id="password"><br>
+                <input type="text" name="strength" id="bar" disabled="disabled">
+            </fieldset>
+            <fieldset>
+                <legend>Let's Work Together!</legend>
+                <label for="comments">What shall we discuss?</label> <textarea name="comments" onKeyUp="updateCommentCount()" id="comments" cols="40" rows="5" placeholder="comments..."></textarea>
+                <input type="text" name="characters" id="text" disabled="disabled" size="1"><br>
+            </fieldset>
+            <!--Submits the information if everything is valid-->
+            <input type="submit" value="Send Info" id="btn" onclick="return validateForm(document.contact);">
+        </form>
+    </main>
+    <footer>
+        &copy; 2023 Sarai Rueda
+    </footer>
+</body>
+</html>

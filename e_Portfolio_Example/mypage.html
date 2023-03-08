@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgb(91, 7, 170);
+        }
+        main {
+            text-align: center;
+        }
+
+        p {
+            width: 30%;
+            padding: 15%;
+            font-size: 30px;
+            color:rgb(255, 25, 71);
+            font-weight: bold;
+        }
+
+        button {
+            width:12%;
+            background-color: rgb(9, 4, 82);
+            font-size: large;
+            color:rgb(247, 30, 102);
+        }
+
+        a:link {
+            color:rgb(0, 46, 252);
+        }
+
+        a:visited {
+            color:deeppink;
+        }
+
+        h1 {
+            color:rgb(255, 25, 71);
+            padding-top: 1%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My JavaScript Skills</h1>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li>Fun Page</li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <script>
+        // the user enters numbers 1-5 and gets a different fun fact
+        function funFact() {
+
+            let spaceFact = prompt('Get a fun fact about space! Choose numbers 1-5');
+
+            // displays a fun fact based off the number stored in spaceFact
+            switch(spaceFact) {
+                case '1': 
+                    document.write('<h1>You Got The New Moon!</h1> <br> <p>The new moon is the first lunar phase and is between the Earth and the Sun, which means that the moon is almost invisible to us! <a href="https://www.nationalgeographic.com/science/article/full-moon#:~:text=from%20being%20full.-,New%20moon,only%20during%20a%20solar%20eclipse.">New Moon</a></p>');
+                    break;
+                case '2': 
+                    document.write('<h1>You Got The Full Moon!</h1> <br> <p>Sometimes we see two full moons in one month and the second full moon during that month is called a Blue moon! <a href="https://spacecentre.co.uk/blog-post/full-moon-facts/#:~:text=Because%20a%20full%20moon%20occurs,a%20blue%20moon%E2%80%9D%20comes%20from!">Full Moon</a></p>');
+                    break;
+                case '3': 
+                    document.write('<h1>You Got The Sun!</h1> <br> <p>The sun is over 4.5 billion years old and sunlight can reach the earth in 8 minutes! <a href="https://www.funkidslive.com/learn/top-10-facts/top-10-facts-about-the-sun/">Sun</a></p>');
+                    break;
+                case '4': 
+                    document.write('<h1>You Got Saturn!</h1> <br> <p>A year on Saturn is 29 Earth years and this planet spins very fast on its axis! <a href="https://www.nasa.gov/audience/forstudents/k-4/home/F_Saturn_Fun_Facts_K-4.html#:~:text=A%20year%20on%20Saturn%20is,we%20do%20here%20on%20Earth.">Saturn</a></p>');
+                    break;
+                case '5': 
+                    document.write('<h1>You Got Venus!</h1> <br> <p>Venus is very hot and has many volcanoes. Also, this planet spins clockwise on its axis! <a href="https://www.space.com/15988-venus-planet-weird-facts.html">Venus</a></p>');
+                    break;
+                default:
+                    document.write('Invalid Input... Try Again.');
+                    break;
+            }
+        }
+
+        function number() {
+            // background images
+           const bImg = ['url(assets/saturn.jpg)', 'url(assets/jupiter.jpg)', 'url(assets/moon1.jpg)', 'url(assets/earth.jpg)', 'url(assets/galaxy.jpg)'];
+           let body = document.querySelector('body');
+           //gets a random index number based on the length of the array
+           let q = Math.floor(Math.random() * bImg.length);
+            let space = bImg[q];
+            //apply's the background image to the body
+            body.style.backgroundImage = space;
+
+        }
+
+    </script>
+    <main>
+        <script>funFact()</script>
+        <button type="button" onclick="number()">Random Background Image</button>
+    </main>
+    <footer>
+        &copy; 2023 Sarai Rueda
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/*this CSS file specifically styles the gallery HTML page*/
+
+* {
+    box-sizing: border-box;
+    
+  }
+
+
+/*styles the image container*/
+  .image-slider {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+    border-style: solid;
+    background-image: url("../assets/starry.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+/*aligns the images in the center*/
+  .myImages {
+    text-align: center;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transition: 0.6s ease;
+    padding-left: 2%;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+
+  /* the next button is positioned on the right side */
+  .next {
+    right: 0;
+    padding-right: 2%;
+  }
+  /* I made the background color a little lighter to see when the user hovers over the buttons */
+  .prev:hover,
+  .next:hover {
+    background-color:midnightblue;
+  }
+/*fade animation*/
+  .slide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }

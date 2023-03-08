@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <style>
+
+        /*Make all text align in the center*/
+        header, nav, h1, h2, h3 {
+            text-align: center;
+        }
+
+        h2, h3 {
+            padding: 1%;
+        }
+
+        p, ol {
+            font-size: large;
+            text-align: left;
+        }
+
+        p {
+            border-style: dotted;
+            border-color:lightskyblue;
+            background-color: lightskyblue;
+            color: black;
+            width: 30%;
+            padding: 3%;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="title">
+        <h1>About Me!</h1>
+        <!--When the mouse goes over the image of me, another image of me is shown-->
+        <img onmouseover="changeImg()" onmouseout="changeImgBack()" id="image" src="assets/myImg1.JPG" height="250" alt="Image of me">
+        <script>
+            function changeImg () {
+                document.getElementById('image').src = 'assets/myImg2.jpg';
+            }
+            // when the mouse goes away from the image, image 2 changes back to image 1
+            function changeImgBack () {
+                document.getElementById('image').src = 'assets/myImg1.jpg';
+            }
+        </script>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li>About Me</li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="mypage.html">Fun Page</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Services:</h2>
+        <ol>
+            <li>Design web pages using CSS.</li>
+            <li>Add JavaScript to make web pages more interactive and dynamic.</li>
+            <li>Create, design, and validate form pages.</li>
+        </ol>
+        <h3>How I Learned Web Development</h3>
+        <p>I started learning web development 10 months ago. In the summer, my first programming language class was Python. After making many projects with Python, learning C++ and JavaScript was easier. In the Fall Term, I learned how to make web pages using HTML and CSS. I made multiple web pages in various designs! It is amazing how much you can do with CSS! You can change the layout of the page, add transitions, and add different animations. JavaScript is a scripting language that I understood well. I used JavaScript on my web pages to validate forms, display alerts, generate HTML markup tags, and prompt the user for information. I have created web pages that included forms and was able to validate the user's input by creating regular expressions, specifying a range for numeric inputs, and making certain fields required. I anticipate creating and designing more complex websites in the future!</p>
+        <h3 class="h3About">When Did I Start?</h3>
+        <p class="pAbout">5 months ago, I started making websites for clients. After creating many different web pages and using various CSS features, designing web pages has become an enjoyable task for me. Equally important, I can make web pages more interactive with JavaScript since I have been using JavaScript diligently in the past 5 months. I am confident in my skills and hope to grow my clientele!</p>
+    </main>
+    <footer>
+        &copy; 2023 Sarai Rueda
+    </footer>
+</body>
+</html>

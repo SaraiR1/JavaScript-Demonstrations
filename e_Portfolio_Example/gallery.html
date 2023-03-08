@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <header class="title">
+        <h1>Gallery</h1>
+        <hr>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="mypage.html">Fun Page</a></li>
+            <li>Gallery</li>
+        </ul>
+    </nav>
+    <div>
+        <h1>These images are web pages I have created!</h1>
+    </div>
+    <!--images for the slideshow-->
+    <div class="image-slider">
+        <div class="myImages slide">
+            <img src="assets/galimg1.jpg" height="450" alt="img1">
+        </div>
+        <div class="myImages slide">
+            <img src="assets/galimg2.jpg" height="450" alt="img2">
+        </div>
+        <div class="myImages slide">
+            <img src="assets/galimg3.jpg" height="450" alt="img3">
+        </div>
+        <div class="myImages slide">
+            <img src="assets/galimg4.jpg" height="450" alt="img4">
+        </div>
+        <div class="myImages slide">
+            <img src="assets/galimg5.jpg" height="450" alt="img5">
+        </div>
+        <!--prev and next buttons-->
+        <span class="next" onclick="nextSlides(true)"><img src="assets/arricon.png" height="50" alt="next"></span>
+        <span class="prev" onclick="nextSlides(false)"><img src="assets/arricon2.png" height="50" alt="prev"></span>
+    </div>
+    <script>
+    //displays gallery images every 5 seconds
+    gal();
+    </script>
+    <footer>
+        &copy; 2023 Sarai Rueda
+    </footer>
+</body>
+</html>
