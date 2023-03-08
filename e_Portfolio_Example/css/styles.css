@@ -36,8 +36,8 @@ ul {
     padding: 0;
 }
 
-footer a {
-    margin-right: 25px;
+footer {
+    padding-top: 1%;
 }
 
 /*styled different headings*/
